@@ -1,0 +1,15 @@
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Distancia en kilómetros</ion-label>
+    <ion-input type="number" [(ngModel)]="distanciaKilometros"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Tiempo en minutos</ion-label>
+    <ion-input type="number" [(ngModel)]="tiempoMinutos"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="calcularTarifa()">Calcular Tarifa</ion-button>
+  <ion-item>
+    <ion-label>Tarifa Total</ion-label>
+    <ion-text>{{ tarifaTotal | currency:'COP' }}</ion-text>
+  </ion-item>
+</ion-content>
